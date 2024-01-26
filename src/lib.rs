@@ -12,9 +12,10 @@ pub use evm::new_andromeda_revm;
 pub mod precompiles {
     pub mod lib;
     pub mod sgxattest;
+    pub mod services_manager;
 }
 
-pub use precompiles::lib::{andromeda_precompiles, sgx_precompiles};
+pub use precompiles::lib::{andromeda_precompiles, sgx_precompiles, sm_precompiles};
 
 
 use revm::primitives::Address;
